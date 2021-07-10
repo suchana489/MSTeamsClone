@@ -8,8 +8,8 @@ myVideo.muted = true;
 
 var peer = new Peer(undefined, {
   path: "/peerjs",
-  host: "/",
-  port: "3000",
+  host: "https://msteamsclone489.herokuapp.com/",
+  port: "process.env.PORT",
 });
 
 let myVideoStream;
@@ -223,8 +223,8 @@ const shareScreen = async () => {
   
   const myPeer = new Peer(undefined, {
     path: '/peerjs',
-    host: '/',
-    port: '3000'
+    host: 'https://msteamsclone489.herokuapp.com/',
+    port: 'process.env.PORT'
   })
 const myVideo2 = document.createElement('video')
 myVideo2.muted = true;
